@@ -1,4 +1,4 @@
-import { Heading, VStack, HStack, Box } from '@chakra-ui/react'
+import { VStack, HStack, Box, Text } from '@chakra-ui/react'
 import NavLinks from './NavLinks'
 import Logo from '../Logo/Logo'
 
@@ -9,9 +9,9 @@ const Navbar = () => {
         <Box position={'absolute'} right={{ lg: '-70px' }} transform={{ lg: 'scale(0.7)', xl: 'scale(0.8)' }} transformOrigin="center" >
           <Logo/>
         </Box>
-        <Heading fontSize={{ lg: '22px', xl: '30px' }} textAlign={'center'}>
+        <Text fontSize={{ lg: '22px', xl: '30px' }} textAlign={'center'} fontWeight={700}>
             白頭翁不吃小米
-        </Heading>
+        </Text>
       </HStack>
 
       <NavLinks />

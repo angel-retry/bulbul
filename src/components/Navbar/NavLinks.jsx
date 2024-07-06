@@ -9,14 +9,14 @@ const NavLinks = () => {
     <VStack spacing={'1rem'} pt={'2rem'}>
       {
         links.map(link => (
-          <NavLink key={link} link={link} isActive={isActive} />
+          <NavLink key={link} link={link} isActive={isActive} setIsActive={setIsActive} />
         ))
       }
     </VStack>
   )
 }
 
-const NavLink = ({ link, isActive }) => {
+const NavLink = ({ link, isActive, setIsActive }) => {
   return (
     <Button
       _hover={{ color: '#AA6666', textDecoration: 'underline', textDecorationColor: '#AA6666' }}
@@ -25,6 +25,7 @@ const NavLink = ({ link, isActive }) => {
       fontSize={'18px'}
       isActive={link === isActive}
       bg={'transparent'}
+      onClick={() => setIsActive(link)}
      >{link}</Button>
   )
 }
