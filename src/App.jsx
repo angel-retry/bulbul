@@ -2,7 +2,6 @@ import { Box, Flex } from '@chakra-ui/react'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
 import Characteristics from './components/Characteristics/Characteristics'
-import Logo from './components/Logo/Logo'
 
 const App = () => {
   return (
@@ -18,9 +17,6 @@ const App = () => {
       {/* Main Content */}
       <Box ml={{ base: 0, lg: '20%', xl: '25%' }} w={{ base: '100%', lg: '80%', xl: '75%' }} h={{ lg: '100%' }}>
         <Characteristics />
-      </Box>
-      <Box position={'absolute'} zIndex={9999}>
-        <Logo />
       </Box>
     </Flex>
   )
