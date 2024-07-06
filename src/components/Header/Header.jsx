@@ -6,7 +6,7 @@ const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <Box w={'100%'} py={'2rem'} px={'.5rem'} boxShadow={'dark-lg'} display={{ lg: 'none' }}>
+    <Box w={'100%'} py={'2rem'} px={'.5rem'} boxShadow={'dark-lg'} display={{ lg: 'none' }} bg={'white'}>
       <HStack w={'100%'} justify={'center'} position={'relative'}>
         <IconButton
           size={'md'}

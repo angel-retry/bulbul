@@ -1,18 +1,24 @@
-import { Box, HStack } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import Header from './components/Header/Header'
 import Navbar from './components/Navbar/Navbar'
+import Characteristics from './components/Characteristics/Characteristics'
 
 const App = () => {
   return (
-    <HStack w={{ lg: '100wh' }} h={{ lg: '100vh' }}>
-      <Box w={{ base: '100%', lg: '20%' }} h={{ lg: '100%' }}>
+    <Flex direction={{ base: 'column', lg: 'row' }} w={{ lg: '100wh' }} h={{ lg: '100vh' }}>
+      {/* Header 與 Navbar */}
+      <Box w={{ base: '100%', lg: '20%', xl: '25%' }} h={{ lg: '100%' }} position={'fixed'} zIndex={999}>
         {/* sm、md */}
         <Header />
         {/* lg以上 */}
         <Navbar />
       </Box>
 
-    </HStack>
+      {/* Main Content */}
+      <Box ml={{ base: 0, lg: '20%', xl: '25%' }} w={{ base: '100%', lg: '80%', xl: '75%' }} h={{ lg: '100%' }}>
+        <Characteristics />
+      </Box>
+    </Flex>
   )
 }
 
