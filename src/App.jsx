@@ -5,7 +5,7 @@ import Characteristics from './components/Characteristics/Characteristics'
 
 const App = () => {
   return (
-    <Flex direction={{ base: 'column', lg: 'row' }} w={{ lg: '100wh' }} h={{ lg: '100vh' }}>
+    <Flex direction={{ base: 'column', lg: 'row' }} w={{ lg: '100%' }} h={{ lg: '100vh' }}>
       {/* Header 與 Navbar */}
       <Box w={{ base: '100%', lg: '20%', xl: '25%' }} h={{ lg: '100%' }} position={'fixed'} zIndex={999}>
         {/* sm、md */}
@@ -15,7 +15,7 @@ const App = () => {
       </Box>
 
       {/* Main Content */}
-      <Box ml={{ base: 0, lg: '20%', xl: '25%' }} w={{ base: '100%', lg: '80%', xl: '75%' }} h={{ lg: '100%' }}>
+      <Box ml={{ base: 0, lg: '20%', xl: '25%' }} w={{ base: '100%', lg: '80%', xl: '75%' }} h={'100%'}>
         <Characteristics />
       </Box>
     </Flex>

@@ -18,9 +18,9 @@ const intros = [
 
 const Characteristics = () => {
   return (
-    <VStack w={'100%'} spacing={'0'} mt={{ base: '95px', lg: 0 }}>
+    <VStack w={'100%'} h={'100%'} spacing={'0'} mt={{ base: '95px', lg: 0 }}>
       {/* Banner */}
-      <Box w={'100%'} height={{ base: '311px', md: '500px' }} overflow="hidden" position={'relative'}>
+      <Box w={'100%'} height={{ base: '311px', md: '500px', lg: '1000px' }} overflow="hidden" position={'relative'}>
         <Flex
           w={{ base: '300px', sm: '350px', md: '100%' }}
           position={'absolute'}
@@ -34,7 +34,7 @@ const Characteristics = () => {
             direction={{ base: 'column', md: 'row' }}
             w={{ base: '50%', sm: '100%' }}
             fontSize={{ base: '30px', md: '48px' }}
-            fontWeight={'900'}
+            fontWeight={'700'}
             color={'white'}
             textAlign={'end'}
             justify={'flex-end'}
@@ -48,8 +48,8 @@ const Characteristics = () => {
       </Box>
 
       {/* Characteristics Introduction */}
-      <Box w={'100%'} bg={'#DCCCBC'}>
-        <Flex direction={{ base: 'column', sm: 'row' }} p={{ base: '3rem 1.5rem 5rem 1.5rem', sm: '2rem 1rem 5rem 1rem' }} align={'flex-start'} gap={{ base: '2rem', sm: '.5rem', md: '1rem' }}>
+      <Box w={'100%'} h={'100%' } bg={'#DCCCBC'}>
+        <Flex direction={{ base: 'column', md: 'row' }} p={{ base: '3rem 1.5rem 5rem 1.5rem', sm: '3rem 2rem 5rem 2rem' }} align={'flex-start'} gap={{ base: '2rem', sm: '2rem', md: '1rem' }}>
           {
             intros.map((intro, i) => (
               <CharacteristicsIntro key={i + 1} intro={intro} />

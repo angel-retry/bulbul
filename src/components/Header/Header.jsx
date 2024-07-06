@@ -1,6 +1,8 @@
-import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
-import { Box, Text, HStack, IconButton, Image, useDisclosure } from '@chakra-ui/react'
+import { CloseIcon } from '@chakra-ui/icons'
+import { Box, Text, HStack, IconButton, useDisclosure } from '@chakra-ui/react'
 import NavLinks from '../Navbar/NavLinks'
+import Logo from '../Logo/Logo'
+import HamburgerIcon from '../HamburgerIcon/HamburgerIcon'
 
 const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -25,8 +27,8 @@ const Header = () => {
           白頭翁不吃小米
         </Text>
 
-        <Box position={'absolute'} right={0}>
-          <Image src="/public/Logo.png" />
+        <Box position={'absolute'} right={0} transform={'scale(0.5) translateX(45%)'} transformOrigin="center">
+          <Logo />
         </Box>
 
       </HStack>
